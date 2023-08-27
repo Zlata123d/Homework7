@@ -35,6 +35,8 @@ public static void task1(){
      for (int j=1; j<=10; j++) {
          population+=population/1000*(ferility - mortality);
          System.out.println("Год"+ j +",численность населения составляет "+ population);
+
+
      }
     }
 }
