@@ -3,7 +3,8 @@ public class Main {
         task1();
     task2();
     task3();
-    task4();}
+    task4();
+    task5();}
 
 public static void task1(){
         System.out.println("Задача 1");
@@ -46,9 +47,20 @@ public static void task1(){
         int month=0;
         while (balance <=12_000_000){
             balance +=15000;
-            balance*=0.07;
+            balance*=1.07;
             ++ month;
             System.out.println("Месяц"+ month+",сумма накоплений равна"+balance+"рублей");
         }
 
-}}
+}
+    public static void task5(){
+        System.out.println("Задача 5");
+        int  balance=0;
+        int month=0;
+        while (balance <=12_000_000){
+            balance +=15000;
+            balance*=1.07;
+            ++ month;
+            if (month % 6 ==0){
+            System.out.println("Месяц"+ month+",сумма накоплений равна"+balance+"рублей");
+    }}}}
