@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -6,7 +8,8 @@ public class Main {
     task4();
     task5();
     task6();
-    task7();}
+    task7();
+    task8();}
 
 public static void task1(){
         System.out.println("Задача 1");
@@ -81,4 +84,15 @@ public static void task1(){
             for (int friday =3; friday<=31; friday+=7){
                 System.out.println("Сегодня пятница"+friday+"-е число. Необходимо подготовить отчет");
             }
+
+    } public static void task8 () {
+        System.out.println("Задача 8");
+        int currentYear= LocalDate.now().getYear();
+        int startYear=currentYear-200;
+        int endYear=currentYear+100;
+        for (int j=startYear; j<=endYear; j++){
+            if (j % 79==0){
+                System.out.println(j);
+            }
+        }
     }}
