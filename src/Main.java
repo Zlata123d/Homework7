@@ -4,7 +4,9 @@ public class Main {
     task2();
     task3();
     task4();
-    task5();}
+    task5();
+    task6();
+    task7();}
 
 public static void task1(){
         System.out.println("Задача 1");
@@ -63,4 +65,20 @@ public static void task1(){
             ++ month;
             if (month % 6 ==0){
             System.out.println("Месяц"+ month+",сумма накоплений равна"+balance+"рублей");
-    }}}}
+    }}}
+    public static void task6(){
+        System.out.println("Задача 6");
+    int balance =0;
+    for (int j=1; j<9 * 12; j++){
+        balance+=15000;
+        balance*=1.07;
+        if (j % 6 ==0){
+            System.out.println("Месяц"+j+",сумма накоплений равна"+balance+"рублей");
+        }
+    }}
+        public static void task7 () {
+            System.out.println("Задача 7");
+            for (int friday =3; friday<=31; friday+=7){
+                System.out.println("Сегодня пятница"+friday+"-е число. Необходимо подготовить отчет");
+            }
+    }}
