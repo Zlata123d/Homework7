@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         task1();
-    task2();}
+    task2();
+    task3();}
 
 public static void task1(){
         System.out.println("Задача 1");
@@ -25,5 +26,15 @@ public static void task1(){
             System.out.println(i+"");
         }
 
+    }
+    public static void task3(){
+     System.out.println("Задача 3");
+     int population=12_000_000;
+     int ferility=17;
+     int mortality=8;
+     for (int j=1; j<=10; j++) {
+         population+=population/1000*(ferility - mortality);
+         System.out.println("Год"+ j +",численность населения составляет "+ population);
+     }
     }
 }
